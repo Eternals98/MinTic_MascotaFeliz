@@ -6,33 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descripción de la pagina">
     <meta name="robots" content="index,follow"> 
-    <title>Home Page</title>
     <link rel="stylesheet" href="./css/main.css">
+    <title>Registro Propietario</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href="./images/3500_2_13.png">
+    <meta http-equiv="Page-Enter" content="blendTrans(duration=1)">
+    <meta http-equiv="Page-Exit" content="revealTrans(duration=0.5, transition=5)">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"></div>
-        <img src="./images/3500_2_13.jpg" alt="Logo de la empresa" class="logo-img">
-        <h2 class="Logo-nombre">Mascota Feliz</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a class="nav-link" href="">Nueva mascota</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">Nuevo veterinario</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">Nuevo propietario</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">Mascotas</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">Lista de mascotas</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <div class="wrapper">
+                <img src="./images/3500_2_13.png" alt="">
+                <div class="logo">Mi Mascota Feliz</div>
+                <nav>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./FormRegistroMascota.html">Nueva Mascota</a>
+                    <a class="active" href="./FormRegistroPropietario.html">Nuevo Dueño</a>
+                    <a href="./FormRegistroVeterinario.html">Nuevo Veterinario</a>
+                    <a href="./ListaMascotas.html">Mascotas</a>
+                    <a href="./ConsultaMascota.html">Mi mascota</a>
+                </nav>
+            </div>
+        </header>
+        <section class="form-register">
+            <h4>Formulario Registro de Propietario</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+            <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+            <input class="controls" type="text" name="correo" id="correo" placeholder="ingrese su correo">
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar">
+            <p><a href="#">¿Ya estoy registrado?</a></p>
+        </section>
 </body>
 </html>

@@ -3,52 +3,134 @@ body {
     margin: 0;
 }
 header {
-    display: flex;
-    min-height: 70px;
-    background-color: coral;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-size: 12px;
-}
-
-.logo {
-    display: flex
-}
-
-.logo-img {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#252932;
+	margin-bottom:20px;
     height: 100px;
-    margin-right: 10px;
 }
 
-li {
-    display: flex;
-}
-ul {
-    display: flex;
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1500px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
 }
 
-a{
-    text-decoration: none;
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:100px;
+	float:left;
+    font-style: italic;
+}
+
+img {
+    height: 100px;
+    align-items: center;
+}
+header nav {
+	float:right;
+	line-height:100px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+}
+
+.active {
+    display:inline-block;
+	color:#fff;
+    background-color: #f56f3a;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+    border-radius: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("../images/SL-100420-36140-29.jpg");
+    background-size: contain;
+  }
+  
+  .form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
     color: white;
-}
-
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-}
-
-nav a:hover {
-    color: aqua;
-}
-
-@media (max-width:700px) {
-    header {
-        flex-direction: column;
-    }
-    nav {
-        padding: 10px 0px;
-    }
-
-}
-
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #f56f3a;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #f56f3a;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  
