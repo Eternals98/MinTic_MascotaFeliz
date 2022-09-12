@@ -22,12 +22,16 @@ header .logo {
 	font-size:50px;
 	line-height:100px;
 	float:left;
-    font-style: italic;
+  font-style: italic;
+}
+header .logo a{
+  text-decoration:none;
+  color:#fff
 }
 
 img {
-    height: 100px;
-    align-items: center;
+  height: 100px;
+  align-items: center;
 }
 header nav {
 	float:right;
@@ -53,9 +57,9 @@ header nav a:hover {
 }
 
 .active {
-    display:inline-block;
+  display:inline-block;
 	color:#fff;
-    background-color: #f56f3a;
+  background-color: #f56f3a;
 	text-decoration:none;
 	padding:10px 20px;
 	line-height:normal;
@@ -75,6 +79,8 @@ header nav a:hover {
   body {
     background-image: url("../images/SL-100420-36140-29.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   
   .form-register {
