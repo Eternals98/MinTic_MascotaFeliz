@@ -10,7 +10,7 @@ header {
     height: 100px;
 }
 
-.wrapper {
+.leftHead {
 	width:90%; /* Establecemos que el ancho sera del 90% */
 	max-width:1500px; /* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin:auto; /* Centramos los elementos */
@@ -83,7 +83,7 @@ header nav a:hover {
     background-size: auto;
   }
   
-  .form-register {
+  .centerPage {
     width: 400px;
     background: #24303c;
     padding: 30px;
@@ -95,7 +95,7 @@ header nav a:hover {
     box-shadow: 7px 13px 37px #000;
   }
   
-  .form-register h4 {
+  .centerPage h4 {
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
@@ -113,24 +113,24 @@ header nav a:hover {
     color: white;
   }
   
-  .form-register p {
+  .centerPage p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
   }
   
-  .form-register a {
+  .centerPage a {
     color: white;
     text-decoration: none;
   }
   
-  .form-register a:hover {
+  .centerPage a:hover {
     color: white;
     text-decoration: underline;
   }
   
-  .form-register .botons {
+  .centerPage .botons {
     width: 100%;
     background: #f56f3a;
     border: none;
@@ -139,4 +139,36 @@ header nav a:hover {
     margin: 16px 0;
     font-size: 16px;
   }
+
+  .tablaMascotas th {  
+    text-align: middle; 
+    color: #fff;
+    background: #f56f3a;
+  }
   
+
+  .tablaMascotas {
+    margin: 25px 0;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+    font-family: sans-serif; 
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #f56f3a;
+    border-radius: 15px;
+    -moz-border-radius: 20px;
+    padding: 0px;
+    -webkit-border-radius: 5px;
+    background-color: white;
+    color: #212529;
+  }
+
+  .max {
+    width: 1000px;
+    align-items: center;
+  }
