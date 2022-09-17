@@ -140,35 +140,53 @@ header nav a:hover {
     font-size: 16px;
   }
 
-  .tablaMascotas th {  
-    text-align: middle; 
-    color: #fff;
-    background: #f56f3a;
-  }
-  
-
   .tablaMascotas {
-    margin: 25px 0;
     font-size: 1em;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
     font-family: sans-serif; 
-    min-width: 450px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    min-width: 500px; 
+    box-shadow: 0 0 10px rgba(184, 183, 183, 0.171);
     margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+  }
+
+  
+  .tablaMascotas thead th {  
+    text-align: left; 
+    color: #fff;
+    background-color: #f56f3a;
+    font-weight: bold;
     text-align: center;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid #f56f3a;
-    border-radius: 15px;
-    -moz-border-radius: 20px;
-    padding: 0px;
-    -webkit-border-radius: 5px;
+  }
+  .tablaMascotas th,  
+  .tablaMascotas td {
+    padding: 12px 15px;
+  }
+  
+  .tablaMascotas tbody tr {
     background-color: white;
     color: #212529;
+    text-align: center;
+    border: #f56f3a;
+  }
+  .tablaMascotas tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .tablaMascotas tbody tr:hover {
+    background-color: #f7c5b1;
+    color: white;
   }
 
   .max {
     width: 1000px;
     align-items: center;
+  }
+  h5{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: italic;
   }
