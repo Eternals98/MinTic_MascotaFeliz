@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,11 +26,15 @@
 				<a href="./FormRegistroPropietario.html">Nuevo Dueño</a>
 				<a href="./FormRegistroVeterinario.html">Nuevo Veterinario</a>
                 <a class="active" href="./ListaMascotas.html">Mascotas</a>
-                <a href="./ConsultaMascota.html">Mi mascota</a>
 			</nav>
 		</div>
 	</header>
     <section class="centerPage max">
+        <section class="incenter">
+            <label class="textSearch" for="">Consula mascota</label>
+            <input class="search" type="text" name="ConsultaM" id="ConsultaMascota" placeholder="Ingrese el nombre de su mascota">
+            <input class="botonConsulta" type="submit" value="Consultar">
+        </section>
         <table class="tablaMascotas" id="tableMascotas" name="Tabla de Mascotas">
             <thead>
                 <tr>
@@ -39,15 +43,19 @@
                     <th>Raza</th>
                     <th>Color</th>
                     <th>Dueño</th>
+                    <th>Veterinario Asignado</th>
+                    <th>Ultima Visita</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>hanna gomez </td>
                     <td>Perro </td>
-                    <td> </td>
                     <td>Lorem </td>
                     <td>Lorem </td>
+                    <td>Lorem </td>
+                    <td>Lorem ipsum </td>
+                    <td>Fecha </td>
                 </tr>
                 <tr>
                     <td>Lorem </td>
@@ -55,6 +63,8 @@
                     <td>Lorem </td>
                     <td>Lorem </td>
                     <td>Lorem </td>
+                    <td>Lorem ipsum </td>
+                    <td>Fecha 2 </td>
                 </tr>
                 <tr>
                     <td>Lorem </td>
@@ -62,6 +72,8 @@
                     <td>Lorem </td>
                     <td>Lorem </td>
                     <td>Lorem </td>
+                    <td>Lorem ipsum </td>
+                    <td>Fecha 1 </td>
                 </tr>
             </tbody>
         </table>
